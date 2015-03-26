@@ -66,13 +66,6 @@
     
     [self.lock lockWrite];
 
-    {
-        if ([_cacheDict objectForKey:key]) {
-            [self.lock unLockWrite];
-            return;
-        }
-    }
-
     // 存在两种情况：
     // 1 obj 是 NNLRUCacheEntry 的子类，将obj.key 设置后直接缓存
     // 2 obj 是 NSObject 的子类，需要新建 NNLRUCacheEntry 后置入，才能缓存
