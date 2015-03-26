@@ -1,0 +1,4 @@
+NNCore
+======
+
+NN framework core

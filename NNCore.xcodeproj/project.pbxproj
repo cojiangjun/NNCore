@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A02DAC190DFB7500765F5A /* NNOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A02DA7190DFB7500765F5A /* NNOperation.m */; };
+		22A02DAD190DFB7500765F5A /* NNOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A02DA9190DFB7500765F5A /* NNOperationQueue.m */; };
+		22A02DAE190DFB7500765F5A /* NNTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A02DAB190DFB7500765F5A /* NNTask.m */; };
+		22A02EEF190E4F3600765F5A /* NNStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A02EEE190E4F3600765F5A /* NNStorageManager.m */; };
+		A5CE10FA18CC42F6003F5725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE10F918CC42F6003F5725 /* Foundation.framework */; };
+		A5CE10FF18CC42F6003F5725 /* NNCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5CE10FE18CC42F6003F5725 /* NNCore.h */; };
+		A5CE110118CC42F6003F5725 /* NNCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE110018CC42F6003F5725 /* NNCore.m */; };
+		A5CE110818CC42F6003F5725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE110718CC42F6003F5725 /* XCTest.framework */; };
+		A5CE110918CC42F6003F5725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE10F918CC42F6003F5725 /* Foundation.framework */; };
+		A5CE110B18CC42F6003F5725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE110A18CC42F6003F5725 /* UIKit.framework */; };
+		A5CE110E18CC42F6003F5725 /* libNNCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE10F618CC42F6003F5725 /* libNNCore.a */; };
+		A5CE111418CC42F6003F5725 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5CE111218CC42F6003F5725 /* InfoPlist.strings */; };
+		A5CE111618CC42F6003F5725 /* NNCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE111518CC42F6003F5725 /* NNCoreTests.m */; };
+		A5CE115918CC4459003F5725 /* NNDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE112218CC4459003F5725 /* NNDeviceManager.m */; };
+		A5CE115A18CC4459003F5725 /* NNQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE112518CC4459003F5725 /* NNQueueManager.m */; };
+		A5CE115B18CC4459003F5725 /* NNThread.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE112718CC4459003F5725 /* NNThread.m */; };
+		A5CE115C18CC4459003F5725 /* NNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE112B18CC4459003F5725 /* NNLogger.m */; };
+		A5CE115D18CC4459003F5725 /* NNNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE112E18CC4459003F5725 /* NNNotification.m */; };
+		A5CE115E18CC4459003F5725 /* NNCircleRingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE113218CC4459003F5725 /* NNCircleRingBuffer.m */; };
+		A5CE115F18CC4459003F5725 /* NNLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE113418CC4459003F5725 /* NNLRUCache.m */; };
+		A5CE116018CC4459003F5725 /* NSData+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE113718CC4459003F5725 /* NSData+Coding.m */; };
+		A5CE116118CC4459003F5725 /* NSDictionary+Adding.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE113918CC4459003F5725 /* NSDictionary+Adding.m */; };
+		A5CE116418CC4459003F5725 /* NSMutableArray+Adding.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE113F18CC4459003F5725 /* NSMutableArray+Adding.m */; };
+		A5CE116518CC4459003F5725 /* NSMutableDictionary+Adding.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE114118CC4459003F5725 /* NSMutableDictionary+Adding.m */; };
+		A5CE116718CC4459003F5725 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE114518CC4459003F5725 /* NSString+Additions.m */; };
+		A5CE116818CC4459003F5725 /* NSString+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE114718CC4459003F5725 /* NSString+Coding.m */; };
+		A5CE116A18CC4459003F5725 /* NSString+MD5HexDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE114B18CC4459003F5725 /* NSString+MD5HexDigest.m */; };
+		A5CE116C18CC4459003F5725 /* NSURL+Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE114F18CC4459003F5725 /* NSURL+Asset.m */; };
+		A5CE116D18CC4459003F5725 /* NSURL+UTF8.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115118CC4459003F5725 /* NSURL+UTF8.m */; };
+		A5CE116E18CC4459003F5725 /* UIDevice+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115318CC4459003F5725 /* UIDevice+Ex.m */; };
+		A5CE116F18CC4459003F5725 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115518CC4459003F5725 /* UIImage+Additions.m */; };
+		A5CE117018CC4459003F5725 /* NNRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115818CC4459003F5725 /* NNRWLock.m */; };
+		A5CE117418CC4545003F5725 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE117318CC4545003F5725 /* Reachability.m */; };
+		A5CE117618CC4606003F5725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE117518CC4606003F5725 /* UIKit.framework */; };
+		A5CE117818CC460F003F5725 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE117718CC460F003F5725 /* SystemConfiguration.framework */; };
+		A5CE117F18CC4BE6003F5725 /* NNDateFormatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE117A18CC4BE6003F5725 /* NNDateFormatUtils.m */; };
+		A5CE118018CC4BE6003F5725 /* NNFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE117C18CC4BE6003F5725 /* NNFileUtils.m */; };
+		A5CE118118CC4BE6003F5725 /* NNImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE117E18CC4BE6003F5725 /* NNImageUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5CE110C18CC42F6003F5725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CE10EE18CC42F6003F5725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CE10F518CC42F6003F5725;
+			remoteInfo = NNCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5CE10F418CC42F6003F5725 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A5CE10FF18CC42F6003F5725 /* NNCore.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22A02DA6190DFB7500765F5A /* NNOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNOperation.h; sourceTree = "<group>"; };
+		22A02DA7190DFB7500765F5A /* NNOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNOperation.m; sourceTree = "<group>"; };
+		22A02DA8190DFB7500765F5A /* NNOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNOperationQueue.h; sourceTree = "<group>"; };
+		22A02DA9190DFB7500765F5A /* NNOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNOperationQueue.m; sourceTree = "<group>"; };
+		22A02DAA190DFB7500765F5A /* NNTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTask.h; sourceTree = "<group>"; };
+		22A02DAB190DFB7500765F5A /* NNTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTask.m; sourceTree = "<group>"; };
+		22A02EED190E4F3600765F5A /* NNStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNStorageManager.h; sourceTree = "<group>"; };
+		22A02EEE190E4F3600765F5A /* NNStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNStorageManager.m; sourceTree = "<group>"; };
+		A5CE10F618CC42F6003F5725 /* libNNCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNNCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CE10F918CC42F6003F5725 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5CE10FD18CC42F6003F5725 /* NNCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NNCore-Prefix.pch"; sourceTree = "<group>"; };
+		A5CE10FE18CC42F6003F5725 /* NNCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCore.h; sourceTree = "<group>"; };
+		A5CE110018CC42F6003F5725 /* NNCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCore.m; sourceTree = "<group>"; };
+		A5CE110618CC42F6003F5725 /* NNCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CE110718CC42F6003F5725 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A5CE110A18CC42F6003F5725 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5CE111118CC42F6003F5725 /* NNCoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NNCoreTests-Info.plist"; sourceTree = "<group>"; };
+		A5CE111318CC42F6003F5725 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5CE111518CC42F6003F5725 /* NNCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCoreTests.m; sourceTree = "<group>"; };
+		A5CE112118CC4459003F5725 /* NNDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDeviceManager.h; sourceTree = "<group>"; };
+		A5CE112218CC4459003F5725 /* NNDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDeviceManager.m; sourceTree = "<group>"; };
+		A5CE112418CC4459003F5725 /* NNQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNQueueManager.h; sourceTree = "<group>"; };
+		A5CE112518CC4459003F5725 /* NNQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNQueueManager.m; sourceTree = "<group>"; };
+		A5CE112618CC4459003F5725 /* NNThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNThread.h; sourceTree = "<group>"; };
+		A5CE112718CC4459003F5725 /* NNThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNThread.m; sourceTree = "<group>"; };
+		A5CE112A18CC4459003F5725 /* NNLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLogger.h; sourceTree = "<group>"; };
+		A5CE112B18CC4459003F5725 /* NNLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLogger.m; sourceTree = "<group>"; };
+		A5CE112D18CC4459003F5725 /* NNNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNNotification.h; sourceTree = "<group>"; };
+		A5CE112E18CC4459003F5725 /* NNNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNNotification.m; sourceTree = "<group>"; };
+		A5CE113118CC4459003F5725 /* NNCircleRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNCircleRingBuffer.h; sourceTree = "<group>"; };
+		A5CE113218CC4459003F5725 /* NNCircleRingBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNCircleRingBuffer.m; sourceTree = "<group>"; };
+		A5CE113318CC4459003F5725 /* NNLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLRUCache.h; sourceTree = "<group>"; };
+		A5CE113418CC4459003F5725 /* NNLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLRUCache.m; sourceTree = "<group>"; };
+		A5CE113618CC4459003F5725 /* NSData+Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Coding.h"; sourceTree = "<group>"; };
+		A5CE113718CC4459003F5725 /* NSData+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Coding.m"; sourceTree = "<group>"; };
+		A5CE113818CC4459003F5725 /* NSDictionary+Adding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Adding.h"; sourceTree = "<group>"; };
+		A5CE113918CC4459003F5725 /* NSDictionary+Adding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Adding.m"; sourceTree = "<group>"; };
+		A5CE113E18CC4459003F5725 /* NSMutableArray+Adding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Adding.h"; sourceTree = "<group>"; };
+		A5CE113F18CC4459003F5725 /* NSMutableArray+Adding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Adding.m"; sourceTree = "<group>"; };
+		A5CE114018CC4459003F5725 /* NSMutableDictionary+Adding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Adding.h"; sourceTree = "<group>"; };
+		A5CE114118CC4459003F5725 /* NSMutableDictionary+Adding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Adding.m"; sourceTree = "<group>"; };
+		A5CE114418CC4459003F5725 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		A5CE114518CC4459003F5725 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		A5CE114618CC4459003F5725 /* NSString+Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Coding.h"; sourceTree = "<group>"; };
+		A5CE114718CC4459003F5725 /* NSString+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Coding.m"; sourceTree = "<group>"; };
+		A5CE114A18CC4459003F5725 /* NSString+MD5HexDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5HexDigest.h"; sourceTree = "<group>"; };
+		A5CE114B18CC4459003F5725 /* NSString+MD5HexDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5HexDigest.m"; sourceTree = "<group>"; };
+		A5CE114E18CC4459003F5725 /* NSURL+Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Asset.h"; sourceTree = "<group>"; };
+		A5CE114F18CC4459003F5725 /* NSURL+Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Asset.m"; sourceTree = "<group>"; };
+		A5CE115018CC4459003F5725 /* NSURL+UTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+UTF8.h"; sourceTree = "<group>"; };
+		A5CE115118CC4459003F5725 /* NSURL+UTF8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+UTF8.m"; sourceTree = "<group>"; };
+		A5CE115218CC4459003F5725 /* UIDevice+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Ex.h"; sourceTree = "<group>"; };
+		A5CE115318CC4459003F5725 /* UIDevice+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Ex.m"; sourceTree = "<group>"; };
+		A5CE115418CC4459003F5725 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		A5CE115518CC4459003F5725 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		A5CE115718CC4459003F5725 /* NNRWLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNRWLock.h; sourceTree = "<group>"; };
+		A5CE115818CC4459003F5725 /* NNRWLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNRWLock.m; sourceTree = "<group>"; };
+		A5CE117218CC4545003F5725 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A5CE117318CC4545003F5725 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A5CE117518CC4606003F5725 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5CE117718CC460F003F5725 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A5CE117918CC4BE6003F5725 /* NNDateFormatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDateFormatUtils.h; sourceTree = "<group>"; };
+		A5CE117A18CC4BE6003F5725 /* NNDateFormatUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDateFormatUtils.m; sourceTree = "<group>"; };
+		A5CE117B18CC4BE6003F5725 /* NNFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNFileUtils.h; sourceTree = "<group>"; };
+		A5CE117C18CC4BE6003F5725 /* NNFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNFileUtils.m; sourceTree = "<group>"; };
+		A5CE117D18CC4BE6003F5725 /* NNImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNImageUtils.h; sourceTree = "<group>"; };
+		A5CE117E18CC4BE6003F5725 /* NNImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNImageUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5CE10F318CC42F6003F5725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE117818CC460F003F5725 /* SystemConfiguration.framework in Frameworks */,
+				A5CE117618CC4606003F5725 /* UIKit.framework in Frameworks */,
+				A5CE10FA18CC42F6003F5725 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CE110318CC42F6003F5725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE110818CC42F6003F5725 /* XCTest.framework in Frameworks */,
+				A5CE110B18CC42F6003F5725 /* UIKit.framework in Frameworks */,
+				A5CE110E18CC42F6003F5725 /* libNNCore.a in Frameworks */,
+				A5CE110918CC42F6003F5725 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A02DA5190DFB7500765F5A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				22A02DA6190DFB7500765F5A /* NNOperation.h */,
+				22A02DA7190DFB7500765F5A /* NNOperation.m */,
+				22A02DA8190DFB7500765F5A /* NNOperationQueue.h */,
+				22A02DA9190DFB7500765F5A /* NNOperationQueue.m */,
+				22A02DAA190DFB7500765F5A /* NNTask.h */,
+				22A02DAB190DFB7500765F5A /* NNTask.m */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		22A02EEC190E4F2400765F5A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				22A02EED190E4F3600765F5A /* NNStorageManager.h */,
+				22A02EEE190E4F3600765F5A /* NNStorageManager.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A5CE10ED18CC42F6003F5725 = {
+			isa = PBXGroup;
+			children = (
+				A5CE10FB18CC42F6003F5725 /* NNCore */,
+				A5CE110F18CC42F6003F5725 /* NNCoreTests */,
+				A5CE10F818CC42F6003F5725 /* Frameworks */,
+				A5CE10F718CC42F6003F5725 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5CE10F718CC42F6003F5725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE10F618CC42F6003F5725 /* libNNCore.a */,
+				A5CE110618CC42F6003F5725 /* NNCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5CE10F818CC42F6003F5725 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE117718CC460F003F5725 /* SystemConfiguration.framework */,
+				A5CE117518CC4606003F5725 /* UIKit.framework */,
+				A5CE10F918CC42F6003F5725 /* Foundation.framework */,
+				A5CE110718CC42F6003F5725 /* XCTest.framework */,
+				A5CE110A18CC42F6003F5725 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5CE10FB18CC42F6003F5725 /* NNCore */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE10FE18CC42F6003F5725 /* NNCore.h */,
+				A5CE110018CC42F6003F5725 /* NNCore.m */,
+				A5CE111F18CC4459003F5725 /* Resource */,
+				A5CE112818CC4459003F5725 /* Support System */,
+				A5CE112F18CC4459003F5725 /* Utils */,
+				A5CE10FC18CC42F6003F5725 /* Supporting Files */,
+			);
+			path = NNCore;
+			sourceTree = "<group>";
+		};
+		A5CE10FC18CC42F6003F5725 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE10FD18CC42F6003F5725 /* NNCore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5CE110F18CC42F6003F5725 /* NNCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE111518CC42F6003F5725 /* NNCoreTests.m */,
+				A5CE111018CC42F6003F5725 /* Supporting Files */,
+			);
+			path = NNCoreTests;
+			sourceTree = "<group>";
+		};
+		A5CE111018CC42F6003F5725 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE111118CC42F6003F5725 /* NNCoreTests-Info.plist */,
+				A5CE111218CC42F6003F5725 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5CE111F18CC4459003F5725 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				22A02EEC190E4F2400765F5A /* Storage */,
+				A5CE112018CC4459003F5725 /* Device */,
+				A5CE112318CC4459003F5725 /* Thread */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A5CE112018CC4459003F5725 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE112118CC4459003F5725 /* NNDeviceManager.h */,
+				A5CE112218CC4459003F5725 /* NNDeviceManager.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		A5CE112318CC4459003F5725 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE112418CC4459003F5725 /* NNQueueManager.h */,
+				A5CE112518CC4459003F5725 /* NNQueueManager.m */,
+				A5CE112618CC4459003F5725 /* NNThread.h */,
+				A5CE112718CC4459003F5725 /* NNThread.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		A5CE112818CC4459003F5725 /* Support System */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE112918CC4459003F5725 /* Log */,
+				A5CE112C18CC4459003F5725 /* Notification */,
+				22A02DA5190DFB7500765F5A /* Task */,
+			);
+			path = "Support System";
+			sourceTree = "<group>";
+		};
+		A5CE112918CC4459003F5725 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE112A18CC4459003F5725 /* NNLogger.h */,
+				A5CE112B18CC4459003F5725 /* NNLogger.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		A5CE112C18CC4459003F5725 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE112D18CC4459003F5725 /* NNNotification.h */,
+				A5CE112E18CC4459003F5725 /* NNNotification.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		A5CE112F18CC4459003F5725 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE117918CC4BE6003F5725 /* NNDateFormatUtils.h */,
+				A5CE117A18CC4BE6003F5725 /* NNDateFormatUtils.m */,
+				A5CE117B18CC4BE6003F5725 /* NNFileUtils.h */,
+				A5CE117C18CC4BE6003F5725 /* NNFileUtils.m */,
+				A5CE117D18CC4BE6003F5725 /* NNImageUtils.h */,
+				A5CE117E18CC4BE6003F5725 /* NNImageUtils.m */,
+				A5CE117118CC4545003F5725 /* Reachability */,
+				A5CE113018CC4459003F5725 /* Cache */,
+				A5CE113518CC4459003F5725 /* Categories */,
+				A5CE115618CC4459003F5725 /* Lock */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A5CE113018CC4459003F5725 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE113118CC4459003F5725 /* NNCircleRingBuffer.h */,
+				A5CE113218CC4459003F5725 /* NNCircleRingBuffer.m */,
+				A5CE113318CC4459003F5725 /* NNLRUCache.h */,
+				A5CE113418CC4459003F5725 /* NNLRUCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A5CE113518CC4459003F5725 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE113618CC4459003F5725 /* NSData+Coding.h */,
+				A5CE113718CC4459003F5725 /* NSData+Coding.m */,
+				A5CE113818CC4459003F5725 /* NSDictionary+Adding.h */,
+				A5CE113918CC4459003F5725 /* NSDictionary+Adding.m */,
+				A5CE113E18CC4459003F5725 /* NSMutableArray+Adding.h */,
+				A5CE113F18CC4459003F5725 /* NSMutableArray+Adding.m */,
+				A5CE114018CC4459003F5725 /* NSMutableDictionary+Adding.h */,
+				A5CE114118CC4459003F5725 /* NSMutableDictionary+Adding.m */,
+				A5CE114418CC4459003F5725 /* NSString+Additions.h */,
+				A5CE114518CC4459003F5725 /* NSString+Additions.m */,
+				A5CE114618CC4459003F5725 /* NSString+Coding.h */,
+				A5CE114718CC4459003F5725 /* NSString+Coding.m */,
+				A5CE114A18CC4459003F5725 /* NSString+MD5HexDigest.h */,
+				A5CE114B18CC4459003F5725 /* NSString+MD5HexDigest.m */,
+				A5CE114E18CC4459003F5725 /* NSURL+Asset.h */,
+				A5CE114F18CC4459003F5725 /* NSURL+Asset.m */,
+				A5CE115018CC4459003F5725 /* NSURL+UTF8.h */,
+				A5CE115118CC4459003F5725 /* NSURL+UTF8.m */,
+				A5CE115218CC4459003F5725 /* UIDevice+Ex.h */,
+				A5CE115318CC4459003F5725 /* UIDevice+Ex.m */,
+				A5CE115418CC4459003F5725 /* UIImage+Additions.h */,
+				A5CE115518CC4459003F5725 /* UIImage+Additions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A5CE115618CC4459003F5725 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE115718CC4459003F5725 /* NNRWLock.h */,
+				A5CE115818CC4459003F5725 /* NNRWLock.m */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		A5CE117118CC4545003F5725 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE117218CC4545003F5725 /* Reachability.h */,
+				A5CE117318CC4545003F5725 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5CE10F518CC42F6003F5725 /* NNCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CE111918CC42F6003F5725 /* Build configuration list for PBXNativeTarget "NNCore" */;
+			buildPhases = (
+				A5CE10F218CC42F6003F5725 /* Sources */,
+				A5CE10F318CC42F6003F5725 /* Frameworks */,
+				A5CE10F418CC42F6003F5725 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNCore;
+			productName = NNCore;
+			productReference = A5CE10F618CC42F6003F5725 /* libNNCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A5CE110518CC42F6003F5725 /* NNCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CE111C18CC42F6003F5725 /* Build configuration list for PBXNativeTarget "NNCoreTests" */;
+			buildPhases = (
+				A5CE110218CC42F6003F5725 /* Sources */,
+				A5CE110318CC42F6003F5725 /* Frameworks */,
+				A5CE110418CC42F6003F5725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5CE110D18CC42F6003F5725 /* PBXTargetDependency */,
+			);
+			name = NNCoreTests;
+			productName = NNCoreTests;
+			productReference = A5CE110618CC42F6003F5725 /* NNCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5CE10EE18CC42F6003F5725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Rcio Wang";
+			};
+			buildConfigurationList = A5CE10F118CC42F6003F5725 /* Build configuration list for PBXProject "NNCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5CE10ED18CC42F6003F5725;
+			productRefGroup = A5CE10F718CC42F6003F5725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5CE10F518CC42F6003F5725 /* NNCore */,
+				A5CE110518CC42F6003F5725 /* NNCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5CE110418CC42F6003F5725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE111418CC42F6003F5725 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5CE10F218CC42F6003F5725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE117418CC4545003F5725 /* Reachability.m in Sources */,
+				A5CE116F18CC4459003F5725 /* UIImage+Additions.m in Sources */,
+				A5CE116718CC4459003F5725 /* NSString+Additions.m in Sources */,
+				A5CE110118CC42F6003F5725 /* NNCore.m in Sources */,
+				22A02DAC190DFB7500765F5A /* NNOperation.m in Sources */,
+				A5CE116E18CC4459003F5725 /* UIDevice+Ex.m in Sources */,
+				A5CE116818CC4459003F5725 /* NSString+Coding.m in Sources */,
+				A5CE115B18CC4459003F5725 /* NNThread.m in Sources */,
+				A5CE118018CC4BE6003F5725 /* NNFileUtils.m in Sources */,
+				A5CE117018CC4459003F5725 /* NNRWLock.m in Sources */,
+				A5CE115F18CC4459003F5725 /* NNLRUCache.m in Sources */,
+				22A02DAD190DFB7500765F5A /* NNOperationQueue.m in Sources */,
+				A5CE117F18CC4BE6003F5725 /* NNDateFormatUtils.m in Sources */,
+				A5CE116118CC4459003F5725 /* NSDictionary+Adding.m in Sources */,
+				A5CE115D18CC4459003F5725 /* NNNotification.m in Sources */,
+				A5CE115C18CC4459003F5725 /* NNLogger.m in Sources */,
+				A5CE115918CC4459003F5725 /* NNDeviceManager.m in Sources */,
+				22A02EEF190E4F3600765F5A /* NNStorageManager.m in Sources */,
+				A5CE115A18CC4459003F5725 /* NNQueueManager.m in Sources */,
+				A5CE116518CC4459003F5725 /* NSMutableDictionary+Adding.m in Sources */,
+				A5CE116A18CC4459003F5725 /* NSString+MD5HexDigest.m in Sources */,
+				A5CE115E18CC4459003F5725 /* NNCircleRingBuffer.m in Sources */,
+				A5CE118118CC4BE6003F5725 /* NNImageUtils.m in Sources */,
+				22A02DAE190DFB7500765F5A /* NNTask.m in Sources */,
+				A5CE116018CC4459003F5725 /* NSData+Coding.m in Sources */,
+				A5CE116D18CC4459003F5725 /* NSURL+UTF8.m in Sources */,
+				A5CE116C18CC4459003F5725 /* NSURL+Asset.m in Sources */,
+				A5CE116418CC4459003F5725 /* NSMutableArray+Adding.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CE110218CC42F6003F5725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE111618CC42F6003F5725 /* NNCoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5CE110D18CC42F6003F5725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CE10F518CC42F6003F5725 /* NNCore */;
+			targetProxy = A5CE110C18CC42F6003F5725 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5CE111218CC42F6003F5725 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5CE111318CC42F6003F5725 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5CE111718CC42F6003F5725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5CE111818CC42F6003F5725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5CE111A18CC42F6003F5725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NNCore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NNCore/NNCore-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5CE111B18CC42F6003F5725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NNCore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NNCore/NNCore-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A5CE111D18CC42F6003F5725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NNCore/NNCore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NNCoreTests/NNCoreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A5CE111E18CC42F6003F5725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NNCore/NNCore-Prefix.pch";
+				INFOPLIST_FILE = "NNCoreTests/NNCoreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5CE10F118CC42F6003F5725 /* Build configuration list for PBXProject "NNCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CE111718CC42F6003F5725 /* Debug */,
+				A5CE111818CC42F6003F5725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CE111918CC42F6003F5725 /* Build configuration list for PBXNativeTarget "NNCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CE111A18CC42F6003F5725 /* Debug */,
+				A5CE111B18CC42F6003F5725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CE111C18CC42F6003F5725 /* Build configuration list for PBXNativeTarget "NNCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CE111D18CC42F6003F5725 /* Debug */,
+				A5CE111E18CC42F6003F5725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5CE10EE18CC42F6003F5725 /* Project object */;
+}
