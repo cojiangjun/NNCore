@@ -13,7 +13,7 @@
 #define LOG_CACHE_NUM       50   //缓存50条日志，满了一次写入
 #define LOG_MAX_SAVE_INTERVAL   10   //每隔10s写一次日志
 
-NS_ENUM(NSInteger, NN_LOG_LEVEL) {
+typedef NS_ENUM(NSInteger, NN_LOG_LEVEL) {
     NN_LOG_LEVEL_NONE                    = 0x00000000,   //none,不写任何日志
     NN_LOG_LEVEL_VERBOSE                 = 0x00000001,   //verbose
     NN_LOG_LEVEL_DEBUG                   = 0x00000002,   //debug
