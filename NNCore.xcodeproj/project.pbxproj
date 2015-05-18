@@ -39,7 +39,6 @@
 		A5CE116E18CC4459003F5725 /* UIDevice+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115318CC4459003F5725 /* UIDevice+Ex.m */; };
 		A5CE116F18CC4459003F5725 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115518CC4459003F5725 /* UIImage+Additions.m */; };
 		A5CE117018CC4459003F5725 /* NNRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE115818CC4459003F5725 /* NNRWLock.m */; };
-		A5CE117418CC4545003F5725 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE117318CC4545003F5725 /* Reachability.m */; };
 		A5CE117618CC4606003F5725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE117518CC4606003F5725 /* UIKit.framework */; };
 		A5CE117818CC460F003F5725 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE117718CC460F003F5725 /* SystemConfiguration.framework */; };
 		A5CE117F18CC4BE6003F5725 /* NNDateFormatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE117A18CC4BE6003F5725 /* NNDateFormatUtils.m */; };
@@ -129,7 +128,6 @@
 		A5CE115718CC4459003F5725 /* NNRWLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNRWLock.h; sourceTree = "<group>"; };
 		A5CE115818CC4459003F5725 /* NNRWLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNRWLock.m; sourceTree = "<group>"; };
 		A5CE117218CC4545003F5725 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		A5CE117318CC4545003F5725 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A5CE117518CC4606003F5725 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5CE117718CC460F003F5725 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A5CE117918CC4BE6003F5725 /* NNDateFormatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDateFormatUtils.h; sourceTree = "<group>"; };
@@ -385,7 +383,6 @@
 			isa = PBXGroup;
 			children = (
 				A5CE117218CC4545003F5725 /* Reachability.h */,
-				A5CE117318CC4545003F5725 /* Reachability.m */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -471,7 +468,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CE117418CC4545003F5725 /* Reachability.m in Sources */,
 				A5CE116F18CC4459003F5725 /* UIImage+Additions.m in Sources */,
 				A5CE116718CC4459003F5725 /* NSString+Additions.m in Sources */,
 				A5CE110118CC42F6003F5725 /* NNCore.m in Sources */,
