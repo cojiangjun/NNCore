@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/rcio/NNCore.git", :tag => "1.0.0" }
   s.source_files  = "NNCore/*.{h,m}", "NNCore/**/*.{h,m}"
   s.prefix_header_contents = '#import "NNCore.h"'
+  s.dependency   = "Reachability"
 end
