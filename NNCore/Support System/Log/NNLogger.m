@@ -72,6 +72,8 @@ static NNLogger* sharedLogger = nil;
     [self.logDatetimeFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
     [self.logDatetimeFormatter setTimeZone:[NSTimeZone systemTimeZone]];
     
+    [NNQueueManager sharedManager];
+    
     return self;
 }
 
@@ -358,8 +360,10 @@ static NNLogger* sharedLogger = nil;
     NSString *logStr = [NSString stringWithFormat:@"[%@:%@] [%@]%@\n", tag, [self getLevelStr:aLevel], aMisc, aContent];
         
     //保存Log
-    if ([[NSThread currentThread] isMainThread]) {
-        [self performSelectorInBackground:@selector(saveLog:) withObject:logStr];
+    if (!dispatch_current_queue_is_main_queue()) {
+        run_block_in_queue_async(NNFastQueue, ^{
+            [self saveLog:logStr];
+        });
     } else {
         [self saveLog:logStr];
     }
