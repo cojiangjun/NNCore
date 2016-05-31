@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     Core functions for ios model development.
                    DESC
-  s.homepage     = "http://github.com/rcio/NNCore"
+  s.homepage     = "http://github.com/cojiangjun/NNCore"
   s.license      = "MIT"
   s.author       = { "gfwangfei" => "gfwangfei@oa.gf.com.cn" }
-  s.source       = { :git => "https://github.com/rcio/NNCore.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/cojiangjun/NNCore.git", :tag => "1.0.1" }
   s.source_files  = "NNCore/*.{h,m}", "NNCore/**/*.{h,m}"
   s.prefix_header_contents = '#import "NNCore.h"'
   s.dependency   "Reachability"
