@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NNCore"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "NNCore"
   s.platform     = :ios, '7.0'
   s.requires_arc = true
