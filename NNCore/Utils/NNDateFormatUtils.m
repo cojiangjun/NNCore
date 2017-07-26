@@ -72,13 +72,6 @@
 
 + (NSDate *)getDateFromString:(NSString *)dateStr dateFormatter:(NSString *)formatter
 {
-    
-    if (dateStr.length < 19) {
-        return nil;
-    } else {
-        dateStr = [dateStr substringToIndex:19];
-    }
-    
     NSDateFormatter *formatterObj = [NNDateFormatUtils getDateFormatter:formatter];
     NSDate *resDate = nil;
     @synchronized(formatterObj) {
